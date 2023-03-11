@@ -6,10 +6,10 @@
             <div class="flex items-center space-x-4">
                 <div class="flex flex-col leading-tight">
                     <div class="text-2xl mt-1 flex items-center">
-                        <span class="text-gray-700 mr-3">John</span>
+                        <span class="text-gray-700 mr-3">{{ auth()->user()->name }}</span>
                     </div>
 
-                    <span class="text-lg text-gray-600">example@gmail.me</span>
+                    <span class="text-lg text-gray-600">{{ auth()->user()->email }}</span>
                 </div>
             </div>
         </div>
